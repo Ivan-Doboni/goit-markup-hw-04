@@ -77,8 +77,9 @@
         font-size: 26px;
         line-height: 1.19;
         color: var(--studio-text-color);
-        padding-top: 24px;
-        padding-bottom: 25px;
+        margin-right: 93px;
+        margin-bottom: 25px;
+        margin-top: 24px
     }
     
     .item {
@@ -92,12 +93,26 @@
     
     .nav_desc {
         display: flex;
-        width: 294px;
-        margin-left: 93px;
-        margin-top: 32px;
-        margin-bottom: 33px;
-        box-sizing: border-box;
-        justify-content: space-between;
+    }
+    
+    .nav_desc .nav_desc_box:not(:last-child) {
+        margin-right: 50px;
+    }
+    
+    .link {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 32px 0;
+        font-size: 14px;
+        color: var(--secondary-text-color);
+        display: block;
+    }
+    
+    .link:hover,
+    .link:focus {
+        color: var(--accent-color);
     }
     
     .link.current {
@@ -107,26 +122,6 @@
         font-size: 14px;
         line-height: 16px;
         color: var(--accent-color);
-    }
-    
-    .link {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 14px;
-        color: var(--secondary-text-color);
-    }
-    
-    .link:hover,
-    .link:focus {
-        color: var(--accent-color);
-    }
-    
-    .link,
-    .contact,
-    .contacts.address {
-        text-decoration: none;
     }
     
     .head_address_no_marker {
@@ -140,6 +135,8 @@
     }
     
     .contact {
+        display: flex;
+        align-items: center;
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -303,7 +300,6 @@
     }
     
     .our_team {
-        padding-bottom: 30px;
         margin-right: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
@@ -332,7 +328,7 @@
     .links {
         display: flex;
         justify-content: center;
-        padding-top: 11px;
+        padding-bottom: 30px;
     }
     
     .icon-list {
@@ -423,6 +419,7 @@
     .main_address {
         background-color: #2f303a;
         padding: 60px 0;
+        height: 252px;
     }
     
     .container.order {
@@ -456,6 +453,7 @@
     
     .contacts.address {
         font-family: Roboto;
+        text-decoration: none;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -590,7 +588,7 @@
         box-sizing: border-box;
         border: 1px solid #eeeeee;
         width: 370px;
-        padding-bottom: 20px;
+        cursor: pointer;
     }
     
     .portfolio-list:hover,
